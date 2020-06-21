@@ -1,90 +1,121 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { Link, graphql } from "gatsby"
+import {
+  // Link,
+  graphql,
+} from "gatsby"
 import {
   Section,
   Container,
   Title,
   Column,
   Content,
-  Button,
-  Icon,
+  Image,
+  Card,
+  CardImage,
+  CardContent,
+  Media,
+  MediaContent,
+  Modal,
+  ModalContent,
+  ModalBackground,
+  ModalClose,
+  Subtitle
 } from "bloomer"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Hero from "../components/hero"
+import { Columns } from "bloomer/lib/grid/Columns"
+import bulmaCarousel from 'bulma-carousel/dist/js/bulma-carousel.min.js';
 
-const IndexPage = ({ data }) => {
-  const page = data.site.siteMetadata
-  return (
-    <Layout>
-      <SEO title="Home" />
-      <Hero siteTitle={page.title} description={page.description} />
-      <Section>
-        <Container>
-          {/* Intro section  */}
-          <Column isSize="2/3">
-            <Title>Welcome to your Gatsby site</Title>
-            <Content>
-              <p>
-                This barebones starter ships with the main{" "}
-                <strong>Gatsby + Bloomer</strong> configuration files you might
-                need. Configured with only the <strong>bare minimums</strong>{" "}
-                needed to get your site started.
-              </p>
-              {/* List of features */}
-              <ul id="list-unstyled">
-                <li>
-                  <Icon
-                    className="fab fa-sass fa-lg has-text-primary"
-                    id="feature-icon"
-                  />
-                  Sass Ready
-                </li>
-                <li>
-                  <Icon
-                    className="fas fa-icons fa-lg has-text-primary"
-                    id="feature-icon"
-                  />
-                  Font Awesome Icons
-                </li>
-                <li>
-                  <Icon
-                    className="fas fa-tachometer-alt fa-lg has-text-primary"
-                    id="feature-icon"
-                  />
-                  Progressive Web App
-                </li>
-                <li>
-                  <Icon
-                    className="fas fa-caret-square-down fa-lg has-text-primary"
-                    id="feature-icon"
-                  />
-                  Sticky Footer
-                </li>
-              </ul>
-              {/* Navigate to page 2 */}
-              <p>
-                <Link to="/page-2/">
-                  <Button
-                    isColor="primary"
-                    className="is-rounded"
-                    id="btn-spaced"
-                  >
-                    <span>Go to page 2</span>
-                    <Icon className="fa fa-arrow-right fa-sm" />
-                  </Button>
-                </Link>
-              </p>
-            </Content>
-          </Column>
 
-          {/* Features section begins */}
-        </Container>
-      </Section>
-    </Layout>
-  )
+class IndexPage extends React.Component {
+
+  constructor( props ){
+    super(props);
+    this.page = props.data.site.siteMetadata;
+    this.products = this.page.products;
+  }
+
+  componentDidMount () {
+    // Initialize all elements with carousel class.
+    bulmaCarousel.attach('.carousel', {
+      loop: true,
+    });
+
+    // Image Modal
+    const thumbs = document.querySelectorAll('.thumb-image img');
+    const modal = document.querySelector('.modal');
+    const modalClose = modal.querySelectorAll('.modal__close, .modal__bg');
+    const modalImage = modal.querySelector('.modal__image img');
+
+    thumbs.forEach(image => {
+      image.addEventListener('click', el => {
+        const target = el.target.parentNode.dataset.image;
+        modalImage.src = target;
+
+        modal.classList.add('is-active');
+      });
+    });
+
+    modalClose.forEach(close => {
+      close.addEventListener('click', () => modal.classList.remove('is-active'));
+    });
+
+  }
+
+  render () {
+    const page = this.page;
+    const products = this.products;
+
+    return (
+      <Layout>
+        <SEO title="Catálogo" />
+        <Hero siteTitle={page.title} description={page.description} more={page.more} />
+        <Section>
+          <Container>
+            <Column>
+              <Content>
+                <Columns>
+                  {products.map(({ title, description, price, images }, index) => (
+                    <Column isSize="1/3" key={index}>
+                      <Card>
+                        <CardImage className={ images.length > 1 ? 'carousel': '' }>
+                          {images.map((image, index) => (
+                            <Image isRatio='4:3' src={image} data-image={image} key={index} className="thumb-image"/>
+                          ))}
+                        </CardImage>
+                        <CardContent>
+                          <Media>
+                            <MediaContent>
+                              <Title isSize={4}>{title}</Title>
+                              <Subtitle isSize={6}>${price}</Subtitle>
+                            </MediaContent>
+                          </Media>
+                          <Content>
+                            {description}
+                          </Content>
+                        </CardContent>
+                      </Card>
+                    </Column>
+                  ))}
+                </Columns>
+              </Content>
+            </Column>
+          </Container>
+        </Section>
+
+        <Modal className="modal">
+          <ModalBackground className="modal__bg" />
+          <ModalContent>
+            <Image isRatio='4:3' className="modal__image"/>
+          </ModalContent >
+          <ModalClose className="modal__close"/>
+        </Modal>
+      </Layout>
+    )
+  }
 }
 
 IndexPage.propTypes = {
@@ -92,9 +123,11 @@ IndexPage.propTypes = {
     siteMetadata: PropTypes.shape({
       title: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
+      more: PropTypes.string.isRequired,
     }),
-  }),
+  })
 }
+
 export default IndexPage
 
 export const query = graphql`
@@ -103,6 +136,13 @@ export const query = graphql`
       siteMetadata {
         title
         description
+        more
+        products{
+          title
+          description
+          price
+          images
+        }
       }
     }
   }

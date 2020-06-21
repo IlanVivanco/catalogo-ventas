@@ -1,8 +1,23 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby + Bloomer`,
-    description: `Kick off your next Gatsby project with Bloomer components. `,
+    title: `Familia Vivanco Haag`,
+    description: `Nos estamos mudando, y vendemos la casa!`,
+    more: `Encontrá el catálogo de cosas que aún tenemos disponibles abajo.`,
     author: `@zlidev`,
+    products: [
+      {
+        title: "Cafetera",
+        description: "Descripción lorem ipsum.",
+        price: 123,
+        images: ['https://via.placeholder.com/1280x960','https://via.placeholder.com/1280x960'],
+      },
+      {
+        title: "Cafetera 2",
+        description: "Descripción lorem ipsum.",
+        price: 200,
+        images: ['https://via.placeholder.com/1280x960'],
+      },
+    ]
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

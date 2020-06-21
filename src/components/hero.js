@@ -4,36 +4,21 @@ import {
   HeroBody,
   Container,
   Title,
-  Button,
+  Subtitle,
   Columns,
-  Column,
-  Icon,
+  Column
 } from "bloomer"
 
 export default class hero extends Component {
   render() {
     return (
-      <Hero isColor="primary" isSize="medium" textalign="left">
+      <Hero isColor="primary" isSize="small" textalign="left">
         <HeroBody>
           <Container>
             <Columns>
-              <Column isSize="1/2">
-                {/* Headline */}
+              <Column>
                 <Title>{this.props.description}</Title>
-                {/* Call to action button */}
-                <Button
-                  isColor="white"
-                  isOutlined
-                  href="https://github.com/zlutfi/gatsby-starter-bloomer"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="is-rounded"
-                  id="btn-spaced"
-                >
-                  {/* Call to action button icon */}
-                  <span>Download Now</span>
-                  <Icon className="fab fa-github fa-sm" />
-                </Button>
+                <Subtitle>{this.props.more}</Subtitle>
               </Column>
             </Columns>
           </Container>
