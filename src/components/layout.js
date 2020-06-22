@@ -35,7 +35,10 @@ const Layout = ({ children }) => {
           whatsapp={data.site.siteMetadata.whatsapp}
         />
         <main className="site-content">{children}</main>
-        <MainFooter />
+        <MainFooter
+          facebook={data.site.siteMetadata.facebook}
+          whatsapp={data.site.siteMetadata.whatsapp}
+        />
       </div>
     </>
   )
