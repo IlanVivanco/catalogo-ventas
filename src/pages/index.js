@@ -36,11 +36,19 @@ class IndexPage extends React.Component {
     super(props);
     this.page = props.data.site.siteMetadata;
     this.products = catalog;
+
+    this.filterProducts();
   }
 
   componentDidMount () {
     this.carousel();
     this.modalImages();
+  }
+
+  filterProducts(){
+    this.products = this.products.filter((el, index) =>{
+      return el.publish ? el : null;
+    });
   }
 
   carousel(){
@@ -86,43 +94,36 @@ class IndexPage extends React.Component {
             <Column>
               <Content>
                 <Columns>
-                  {products.map(({ publish, title, description, price, images, categories }, index) => {
-                      if ( !publish ){
-                        return;
-                      }
-
-                      return (
-                        <Column isSize="1/3" key={index}>
-                          <Card>
-                            <CardImage className={ images.thumbs.length > 1 ? 'carousel': '' }>
-                              {images.thumbs.map((thumb, index) => (
-                                <Image isRatio='4:3' src={thumb} data-image={images.full[index]} key={index} className="thumb-image"/>
-                              ))}
-                            </CardImage>
-                            <CardContent>
-                              <Media>
-                                <MediaContent>
-                                  <div>
-                                    {categories.map((cat, index) => (
-                                      <span className="category" key={index}>{cat}</span>
-                                    ))}
-                                  </div>
-                                  <Title isSize={4}>{title}</Title>
-                                  <Subtitle isSize={6}>${price}</Subtitle>
-                                </MediaContent>
-                              </Media>
-                              <Content>
-                                <p>{description}</p>
-                                <div className="actions">
-                                  <Button href={`${page.whatsapp}?text=Hola, estaba viendo el catálogo online y me gustó este producto: ${title}`} isColor='info' isLink target="_blank">Lo quiero</Button>
-                                </div>
-                              </Content>
-                            </CardContent>
-                          </Card>
-                        </Column>
-                      )
-                    }
-                  )}
+                  {products.map(({ title, description, price, images, categories }, index) => (
+                    <Column isSize="1/3" key={index}>
+                      <Card>
+                        <CardImage className={ images.thumbs.length > 1 ? 'carousel': '' }>
+                          {images.thumbs.map((thumb, index) => (
+                            <Image isRatio='4:3' src={thumb} data-image={images.full[index]} key={index} className="thumb-image"/>
+                          ))}
+                        </CardImage>
+                        <CardContent>
+                          <Media>
+                            <MediaContent>
+                              <div>
+                                {categories.map((cat, index) => (
+                                  <span className="category" key={index}>{cat}</span>
+                                ))}
+                              </div>
+                              <Title isSize={4}>{title}</Title>
+                              <Subtitle isSize={6}>${price}</Subtitle>
+                            </MediaContent>
+                          </Media>
+                          <Content>
+                            <p>{description}</p>
+                            <div className="actions">
+                              <Button href={`${page.whatsapp}?text=Hola, estaba viendo el catálogo online y me gustó este producto: ${title}`} isColor='info' isLink target="_blank">Lo quiero</Button>
+                            </div>
+                          </Content>
+                        </CardContent>
+                      </Card>
+                    </Column>
+                  ))}
                 </Columns>
               </Content>
             </Column>
