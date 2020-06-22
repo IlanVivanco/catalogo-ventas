@@ -3,7 +3,7 @@ module.exports = {
     title: `Familia Vivanco Haag`,
     description: `Nos estamos mudando, y vendemos la casa!`,
     more: `Encontrá el catálogo de cosas que aún tenemos disponibles abajo.`,
-    author: `@zlidev`,
+    author: `Ilán Vivanco`,
     products: [
       {
         title: "Cafetera",

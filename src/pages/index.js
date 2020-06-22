@@ -28,7 +28,6 @@ import SEO from "../components/seo"
 import Hero from "../components/hero"
 import { Columns } from "bloomer/lib/grid/Columns"
 
-
 class IndexPage extends React.Component {
 
   constructor( props ){
@@ -38,7 +37,7 @@ class IndexPage extends React.Component {
   }
 
   componentDidMount () {
-    this.carousel();
+    // this.carousel();
     this.modalImages();
   }
 

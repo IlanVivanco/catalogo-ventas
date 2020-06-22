@@ -83,10 +83,16 @@ $footer-padding: 1em;
 }
 
 .card {
-  figure.image{
+  .image{
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 0 !important;
+
+    & + .image{
+      display: none;
+    }
   }
+
   .media{
     margin-bottom: 0 !important;
   }
