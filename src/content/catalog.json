@@ -18,7 +18,7 @@
   },
   {
     "publish": true,
-    "categories": ["Cocina", "Varios"],
+    "categories": ["Otro"],
     "title": "Tostadora",
     "description": "Este es otro producto que también queda.",
     "price": 2200,
@@ -33,7 +33,7 @@
   },
   {
     "publish": true,
-    "categories": ["Varios"],
+    "categories": ["Varios", "Cocina"],
     "title": "Producto nuevo",
     "description": "También tenemos este.",
     "price": 170,

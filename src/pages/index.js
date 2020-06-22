@@ -34,10 +34,15 @@ class IndexPage extends React.Component {
 
   constructor( props ){
     super(props);
-    this.page = props.data.site.siteMetadata;
-    this.products = catalog;
 
-    this.filterProducts();
+    this.page = props.data.site.siteMetadata;
+    this.products = this.publishedProducts( catalog );
+    this.categories = this.setCategories();
+
+    this.state = {
+      filteredProducts: this.products,
+      categories: this.categories,
+    }
   }
 
   componentDidMount () {
@@ -45,10 +50,50 @@ class IndexPage extends React.Component {
     this.modalImages();
   }
 
-  filterProducts(){
-    this.products = this.products.filter((el, index) =>{
+  setCategories(){
+    const filtered = this.products.reduce( (cats, el) => {
+      const current = el.categories;
+      const categories = [...cats];
+
+      current.forEach((el) => {
+        if ( ! cats.includes(el) ){
+          categories.push(el)
+        }
+      })
+
+      return categories;
+    }, [] );
+
+    return ["Todas", ...filtered];
+  }
+
+  filterList(category, e){
+    e.preventDefault();
+    this.filterProducts(category);
+  }
+
+  publishedProducts( products ){
+    return products.filter((el, index) =>{
       return el.publish ? el : null;
     });
+  }
+
+  filterProducts(category){
+    if(category){
+      if ( "Todas" === category ){
+        this.setState({
+          filteredProducts: this.products,
+        });
+      }else{
+        const filtered = this.products.filter((el, index) =>{
+          return el.categories.includes(category) ? el : null;
+        });
+
+        this.setState({
+          filteredProducts: filtered,
+        });
+      }
+    }
   }
 
   carousel(){
@@ -83,7 +128,6 @@ class IndexPage extends React.Component {
 
   render () {
     const page = this.page;
-    const products = this.products;
 
     return (
       <Layout>
@@ -94,7 +138,12 @@ class IndexPage extends React.Component {
             <Column>
               <Content>
                 <Columns>
-                  {products.map(({ title, description, price, images, categories }, index) => (
+                  <Column isSize="full" className="has-text-centered">
+                    {this.state.categories.map((el, index) => (
+                      <Button isSize="small" isColor="info" className="filter-item" href="#" onClick={(e) => this.filterList(el, e)} key={index}>{el}</Button>
+                    ))}
+                  </Column>
+                  {this.state.filteredProducts.map(({ title, description, price, images, categories }, index) => (
                     <Column isSize="1/3" key={index}>
                       <Card>
                         <CardImage className={ images.thumbs.length > 1 ? 'carousel': '' }>
