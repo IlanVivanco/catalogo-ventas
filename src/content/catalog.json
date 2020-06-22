@@ -1,5 +1,6 @@
 [
   {
+    "publish": true,
     "categories": ["Cocina"],
     "title": "Cafetera",
     "description": "Este es el primer producto.",
@@ -16,6 +17,7 @@
     }
   },
   {
+    "publish": true,
     "categories": ["Cocina", "Varios"],
     "title": "Tostadora",
     "description": "Este es otro producto que también queda.",
@@ -30,6 +32,7 @@
     }
   },
   {
+    "publish": true,
     "categories": ["Varios"],
     "title": "Producto nuevo",
     "description": "También tenemos este.",
