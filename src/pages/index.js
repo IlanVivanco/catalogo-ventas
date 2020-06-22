@@ -7,6 +7,7 @@ import {
 import {
   Section,
   Container,
+  Button,
   Title,
   Column,
   Content,
@@ -37,7 +38,7 @@ class IndexPage extends React.Component {
   }
 
   componentDidMount () {
-    // this.carousel();
+    this.carousel();
     this.modalImages();
   }
 
@@ -100,7 +101,10 @@ class IndexPage extends React.Component {
                             </MediaContent>
                           </Media>
                           <Content>
-                            {description}
+                            <p>{description}</p>
+                            <p className="has-text-right">
+                              <Button href={page.whatsapp} isColor='info' isLink target="_blank">Lo quiero</Button>
+                            </p>
                           </Content>
                         </CardContent>
                       </Card>
@@ -143,6 +147,7 @@ export const query = graphql`
         title
         description
         more
+        whatsapp
         products{
           title
           description

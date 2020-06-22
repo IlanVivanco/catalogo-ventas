@@ -18,6 +18,8 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          facebook
+          whatsapp
         }
       }
     }
@@ -27,7 +29,11 @@ const Layout = ({ children }) => {
     <>
       {/* Wrapper for sticky footer */}
       <div className="site">
-        <Navbar siteTitle={data.site.siteMetadata.title} />
+        <Navbar
+          siteTitle={data.site.siteMetadata.title}
+          facebook={data.site.siteMetadata.facebook}
+          whatsapp={data.site.siteMetadata.whatsapp}
+        />
         <main className="site-content">{children}</main>
         <MainFooter />
       </div>
