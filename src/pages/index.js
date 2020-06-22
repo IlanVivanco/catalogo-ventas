@@ -29,14 +29,15 @@ import SEO from "../components/seo"
 import Hero from "../components/hero"
 import catalog from "../content/catalog.json"
 import { Columns } from "bloomer/lib/grid/Columns"
+import Swiper from 'swiper';
 
 class IndexPage extends React.Component {
 
-  constructor( props ){
+  constructor(props) {
     super(props);
 
     this.page = props.data.site.siteMetadata;
-    this.products = this.publishedProducts( catalog );
+    this.products = this.publishedProducts(catalog);
     this.categories = this.setCategories();
 
     this.state = {
@@ -45,47 +46,51 @@ class IndexPage extends React.Component {
     }
   }
 
-  componentDidMount () {
+  componentDidMount() {
     this.carousel();
     this.modalImages();
   }
 
-  setCategories(){
-    const filtered = this.products.reduce( (cats, el) => {
+  componentDidUpdate() {
+    this.carousel();
+    this.modalImages();
+  }
+
+  setCategories() {
+    const filtered = this.products.reduce((cats, el) => {
       const current = el.categories;
       const categories = [...cats];
 
       current.forEach((el) => {
-        if ( ! cats.includes(el) ){
+        if (!cats.includes(el)) {
           categories.push(el)
         }
-      })
+      });
 
       return categories;
-    }, [] );
+    }, []);
 
-    return ["Todas", ...filtered];
+    return ["Todo", ...filtered];
   }
 
-  filterList(category, e){
-    e.preventDefault();
+  filterList(category) {
     this.filterProducts(category);
   }
 
-  publishedProducts( products ){
-    return products.filter((el, index) =>{
+  publishedProducts(products) {
+    return products.filter((el, index) => {
       return el.publish ? el : null;
     });
   }
 
-  filterProducts(category){
-    if(category){
-      if ( "Todas" === category ){
+  filterProducts(category) {
+    if (category) {
+      if ("Todo" === category) {
         this.setState({
           filteredProducts: this.products,
         });
-      }else{
-        const filtered = this.products.filter((el, index) =>{
+      } else {
+        const filtered = this.products.filter((el, index) => {
           return el.categories.includes(category) ? el : null;
         });
 
@@ -96,17 +101,20 @@ class IndexPage extends React.Component {
     }
   }
 
-  carousel(){
-    if (typeof window !== 'undefined'){
-      const bulmaCarousel = require('bulma-carousel/dist/js/bulma-carousel.js')
-
-      bulmaCarousel.attach('.carousel', {
-        loop: true,
-      });
-    }
+  carousel() {
+    new Swiper('.carousel .swiper-container', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+    });
   }
 
-  modalImages(){
+  modalImages() {
     const thumbs = document.querySelectorAll('.thumb-image img');
     const modal = document.querySelector('.modal');
     const modalClose = modal.querySelectorAll('.modal__close, .modal__bg');
@@ -126,7 +134,7 @@ class IndexPage extends React.Component {
     });
   }
 
-  render () {
+  render() {
     const page = this.page;
 
     return (
@@ -140,16 +148,27 @@ class IndexPage extends React.Component {
                 <Columns>
                   <Column isSize="full" className="has-text-centered">
                     {this.state.categories.map((el, index) => (
-                      <Button isSize="small" isColor="info" className="filter-item" href="#" onClick={(e) => this.filterList(el, e)} key={index}>{el}</Button>
+                      <Button isSize="small" isColor="info" className="filter-item" onClick={(e) => this.filterList(el)} key={index}>{el}</Button>
                     ))}
                   </Column>
                   {this.state.filteredProducts.map(({ title, description, price, images, categories }, index) => (
                     <Column isSize="1/3" key={index}>
                       <Card>
-                        <CardImage className={ images.thumbs.length > 1 ? 'carousel': '' }>
-                          {images.thumbs.map((thumb, index) => (
-                            <Image isRatio='4:3' src={thumb} data-image={images.full[index]} key={index} className="thumb-image"/>
-                          ))}
+                        <CardImage className={images.thumbs.length > 1 ? 'carousel' : ''}>
+                          <div className="swiper-container">
+                            <div className="swiper-wrapper">
+                              {images.thumbs.map((thumb, index) => (
+                                <div className="swiper-slide" key={index}>
+                                  <Image isRatio='4:3' src={thumb} data-image={images.full[index]} className="thumb-image" />
+                                </div>
+                              ))}
+                            </div>
+
+                            <div className="swiper-pagination"></div>
+                            <div className="swiper-button-prev"></div>
+                            <div className="swiper-button-next"></div>
+                        </div>
+
                         </CardImage>
                         <CardContent>
                           <Media>
@@ -182,9 +201,9 @@ class IndexPage extends React.Component {
         <Modal className="modal">
           <ModalBackground className="modal__bg" />
           <ModalContent>
-            <Image isRatio='4:3' className="modal__image"/>
+            <Image isRatio='4:3' className="modal__image" />
           </ModalContent >
-          <ModalClose className="modal__close"/>
+          <ModalClose className="modal__close" />
         </Modal>
       </Layout>
     )
