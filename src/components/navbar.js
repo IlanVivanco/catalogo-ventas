@@ -33,15 +33,15 @@ export default class navbar extends Component {
             </Link>
             <NavbarEnd>
               <NavbarItem>
-                <Link to="/" className="navbar-item">
+                <a href="https://wa.me/5491157304817" className="navbar-item">
                   <Icon className="fab fa-whatsapp fa-lg" />
-                </Link>
-                <Link to="/" className="navbar-item">
-                  <Icon className="fab fa-instagram fa-lg" />
-                </Link>
-                <Link to="/" className="navbar-item">
+                </a>
+                <a href="http://m.me/ilanvivanco" className="navbar-item">
                   <Icon className="fab fa-facebook fa-lg" />
-                </Link>
+                </a>
+                {/* <a to="/" className="navbar-item">
+                  <Icon className="fab fa-instagram fa-lg" />
+                </a> */}
               </NavbarItem>
             </NavbarEnd>
           </NavbarBrand>

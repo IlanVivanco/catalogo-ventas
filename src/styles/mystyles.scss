@@ -99,11 +99,13 @@ $footer-padding: 1em;
   .slider-navigation-previous{
     width: 25px;
     height: 25px;
+    opacity: 0.8;
   }
 
   .slider-pagination .slider-page{
     width: 5px;
     height: 5px;
+    opacity: 0.4;
   }
 
   .slider-navigation-next{

@@ -27,7 +27,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Hero from "../components/hero"
 import { Columns } from "bloomer/lib/grid/Columns"
-import bulmaCarousel from 'bulma-carousel/dist/js/bulma-carousel.min.js';
 
 
 class IndexPage extends React.Component {
@@ -39,12 +38,21 @@ class IndexPage extends React.Component {
   }
 
   componentDidMount () {
-    // Initialize all elements with carousel class.
-    bulmaCarousel.attach('.carousel', {
-      loop: true,
-    });
+    this.carousel();
+    this.modalImages();
+  }
 
-    // Image Modal
+  carousel(){
+    if (typeof window !== 'undefined'){
+      const bulmaCarousel = require('bulma-carousel/dist/js/bulma-carousel.js')
+
+      bulmaCarousel.attach('.carousel', {
+        loop: true,
+      });
+    }
+  }
+
+  modalImages(){
     const thumbs = document.querySelectorAll('.thumb-image img');
     const modal = document.querySelector('.modal');
     const modalClose = modal.querySelectorAll('.modal__close, .modal__bg');
@@ -62,7 +70,6 @@ class IndexPage extends React.Component {
     modalClose.forEach(close => {
       close.addEventListener('click', () => modal.classList.remove('is-active'));
     });
-
   }
 
   render () {

@@ -9,7 +9,7 @@ module.exports = {
         title: "Cafetera",
         description: "Descripción lorem ipsum.",
         price: 123,
-        images: ['https://via.placeholder.com/1280x960','https://via.placeholder.com/1280x960'],
+        images: ['https://via.placeholder.com/1280x960', 'https://via.placeholder.com/1280x960'],
       },
       {
         title: "Cafetera 2",
