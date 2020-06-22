@@ -6,25 +6,6 @@ module.exports = {
     author: `Ilán Vivanco`,
     whatsapp: `https://wa.me/5491157304817`,
     facebook: `http://m.me/ilanvivanco`,
-    products: [
-      {
-        title: "Cafetera",
-        description: "Este es el primer producto.",
-        price: 123,
-        images: [
-          'https://i.picsum.photos/id/655/1280/800.jpg?hmac=TmZoc7kkkcFdZ4GaLFfsybCGuZx7JLbTkTanKLTSXto',
-          'https://i.picsum.photos/id/991/1280/800.jpg?hmac=8soaH8eiZjefVdjdH1lo-SixGy0YQFEUL5VhrZ74tRw',
-        ],
-      },
-      {
-        title: "Cafetera 2",
-        description: "Este es otro producto que también queda. Este es otro producto que también queda. Este es otro producto que también queda.",
-        price: 200,
-        images: [
-          'https://i.picsum.photos/id/1032/1280/800.jpg?hmac=WX0rmwR4y2onsXCvokPTSkJ5cSnQf00NXtGXoboMk2s',
-        ],
-      },
-    ]
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
