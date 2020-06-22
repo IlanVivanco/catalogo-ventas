@@ -18,7 +18,7 @@ module.exports = {
       },
       {
         title: "Cafetera 2",
-        description: "Este es otro producto que también queda.",
+        description: "Este es otro producto que también queda. Este es otro producto que también queda. Este es otro producto que también queda.",
         price: 200,
         images: [
           'https://i.picsum.photos/id/1032/1280/800.jpg?hmac=WX0rmwR4y2onsXCvokPTSkJ5cSnQf00NXtGXoboMk2s',

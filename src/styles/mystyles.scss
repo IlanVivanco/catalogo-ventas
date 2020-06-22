@@ -82,6 +82,11 @@ $footer-padding: 1em;
   margin-left: auto;
 }
 
+.content .columns{
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .card {
   .image{
     margin-left: 0;
