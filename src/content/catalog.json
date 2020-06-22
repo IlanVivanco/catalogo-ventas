@@ -1,0 +1,48 @@
+[
+  {
+    "categories": ["Cocina"],
+    "title": "Cafetera",
+    "description": "Este es el primer producto.",
+    "price": 1224,
+    "images": {
+      "thumbs": [
+        "https://i.picsum.photos/id/341/360/270.jpg?hmac=qifUmlxujutg8lmXkXmDwXno8aZyw4NhQou92RHhsZg",
+        "https://i.picsum.photos/id/536/360/270.jpg?hmac=Vk90Uj2wmmPkjTk2nX-mb7avi5Oix4Lt4BGtSCiMgvc"
+      ],
+      "full": [
+        "https://i.picsum.photos/id/867/1280/800.jpg?hmac=3W2MKqy37NHV8NGdfOdIBticJaPKeG7U-X8fksu99CQ",
+        "https://i.picsum.photos/id/900/1280/800.jpg?hmac=_YkBpLYTQ0W4TEB_HYhTgplNbLi1ZzdgboBh1MX-pk8"
+      ]
+    }
+  },
+  {
+    "categories": ["Cocina", "Varios"],
+    "title": "Tostadora",
+    "description": "Este es otro producto que también queda.",
+    "price": 2200,
+    "images": {
+      "thumbs": [
+        "https://i.picsum.photos/id/901/360/270.jpg?hmac=TTc6sKAT4X6LLh1kjP_kQAAMm4toPvnaHTE_cRjlOLE"
+      ],
+      "full": [
+        "https://i.picsum.photos/id/608/1280/800.jpg?hmac=dgUQFaBdyDjSFxwBgbHwMeKHZy3Oi-l90jx-SHaYsqk"
+      ]
+    }
+  },
+  {
+    "categories": ["Varios"],
+    "title": "Producto nuevo",
+    "description": "También tenemos este.",
+    "price": 170,
+    "images": {
+      "thumbs": [
+        "https://i.picsum.photos/id/17/360/270.jpg?hmac=1x7jBK2wEkHmmAEX58sjLkFmXVYRP8xLegOEd45L_fs",
+        "https://i.picsum.photos/id/152/360/270.jpg?hmac=8w-VlaNclnGXZXW6vrEaEGXyXirjZ3BFJxf3r4J_92s"
+      ],
+      "full": [
+        "https://i.picsum.photos/id/126/1280/800.jpg?hmac=Rb12v8tkKHnyG5VjoMA2xe2W8GsD7gMBqDchJj7JECM",
+        "https://i.picsum.photos/id/21/1280/800.jpg?hmac=K7nU7NrXzahj57K4P2aoZcy9IDhJXsLzJJl4F-npOck"
+      ]
+    }
+  }
+]

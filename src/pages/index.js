@@ -27,6 +27,7 @@ import {
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Hero from "../components/hero"
+import catalog from "../content/catalog.json"
 import { Columns } from "bloomer/lib/grid/Columns"
 
 class IndexPage extends React.Component {
@@ -34,7 +35,7 @@ class IndexPage extends React.Component {
   constructor( props ){
     super(props);
     this.page = props.data.site.siteMetadata;
-    this.products = this.page.products;
+    this.products = catalog;
   }
 
   componentDidMount () {
@@ -85,26 +86,31 @@ class IndexPage extends React.Component {
             <Column>
               <Content>
                 <Columns>
-                  {products.map(({ title, description, price, images }, index) => (
+                  {products.map(({ title, description, price, images, categories }, index) => (
                     <Column isSize="1/3" key={index}>
                       <Card>
-                        <CardImage className={ images.length > 1 ? 'carousel': '' }>
-                          {images.map((image, index) => (
-                            <Image isRatio='4:3' src={image} data-image={image} key={index} className="thumb-image"/>
+                        <CardImage className={ images.thumbs.length > 1 ? 'carousel': '' }>
+                          {images.thumbs.map((thumb, index) => (
+                            <Image isRatio='4:3' src={thumb} data-image={images.full[index]} key={index} className="thumb-image"/>
                           ))}
                         </CardImage>
                         <CardContent>
                           <Media>
                             <MediaContent>
+                              <div>
+                                {categories.map((cat, index) => (
+                                  <span className="category" key={index}>{cat}</span>
+                                ))}
+                              </div>
                               <Title isSize={4}>{title}</Title>
                               <Subtitle isSize={6}>${price}</Subtitle>
                             </MediaContent>
                           </Media>
                           <Content>
                             <p>{description}</p>
-                            <p className="has-text-right">
-                              <Button href={page.whatsapp} isColor='info' isLink target="_blank">Lo quiero</Button>
-                            </p>
+                            <div className="actions">
+                              <Button href={`${page.whatsapp}?text=Hola, estaba viendo el catálogo online y me gustó este producto: ${title}`} isColor='info' isLink target="_blank">Lo quiero</Button>
+                            </div>
                           </Content>
                         </CardContent>
                       </Card>
@@ -148,12 +154,6 @@ export const query = graphql`
         description
         more
         whatsapp
-        products{
-          title
-          description
-          price
-          images
-        }
       }
     }
   }
