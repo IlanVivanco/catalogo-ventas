@@ -33,10 +33,10 @@ export default class navbar extends Component {
             </Link>
             <NavbarEnd>
               <NavbarItem>
-                <a href={this.props.facebook} className="navbar-item">
+                <a href={this.props.whatsapp} className="navbar-item">
                   <Icon className="fab fa-whatsapp fa-lg" />
                 </a>
-                <a href={this.props.whatsapp} className="navbar-item">
+                <a href={this.props.facebook} className="navbar-item">
                   <Icon className="fab fa-facebook fa-lg" />
                 </a>
                 {/* <a to="/" className="navbar-item">
