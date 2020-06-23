@@ -6,7 +6,7 @@
       "title": "Cafetera",
       "description": "Este es el primer producto.",
       "price": 1224,
-      "images": ["../images/elementos/foto.jpg"]
+      "images": ["../images/catalogo/cocodrilo.jpg"]
     },
     {
       "publish": true,
@@ -14,7 +14,7 @@
       "title": "Tostadora",
       "description": "Este es otro producto que también queda.",
       "price": 2200,
-      "images": ["../images/elementos/foto.jpg"]
+      "images": ["../images/catalogo/cocodrilo.jpg"]
     },
     {
       "publish": true,
@@ -22,7 +22,7 @@
       "title": "Producto nuevo",
       "description": "También tenemos este.",
       "price": 170,
-      "images": ["../images/elementos/foto.jpg"]
+      "images": ["../images/catalogo/cocodrilo.jpg"]
     }
   ]
 }
