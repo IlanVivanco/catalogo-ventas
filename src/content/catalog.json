@@ -6,10 +6,13 @@
       "title": "Cafetera",
       "description": "Este es el primer producto.",
       "price": 1224,
-      "images": ["../images/catalogo/cocodrilo.jpg"]
+      "images": [
+        "../images/catalogo/cocodrilo.jpg",
+        "../images/catalogo/cocodrilo.jpg"
+      ]
     },
     {
-      "publish": true,
+      "publish": false,
       "categories": ["Varios"],
       "title": "Tostadora",
       "description": "Este es otro producto que también queda.",

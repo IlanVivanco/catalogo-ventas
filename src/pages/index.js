@@ -40,7 +40,7 @@ class IndexPage extends React.Component {
     this.categories = this.setCategories();
 
     this.state = {
-      filteredProducts: this.products,
+      filteredProducts: this.publishedProducts(this.products),
       categories: this.categories,
     }
   }
