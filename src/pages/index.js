@@ -36,7 +36,7 @@ class IndexPage extends React.Component {
     super(props);
 
     this.page = props.data.site.siteMetadata;
-    this.products = props.data.allCatalogJson.nodes;
+    this.products = props.data.allContentJson.nodes[0].catalog;
     this.categories = this.setCategories();
 
     this.state = {
@@ -121,7 +121,7 @@ class IndexPage extends React.Component {
 
     thumbs.forEach(image => {
       image.addEventListener('click', el => {
-        const target = el.target.parentNode.dataset.image;
+        const target = el.target.src;
         modalImage.src = target;
 
         modal.classList.add('is-active');
@@ -153,12 +153,12 @@ class IndexPage extends React.Component {
                   {this.state.filteredProducts.map(({ title, description, price, images, categories }, index) => (
                     <Column isSize="1/3" key={index}>
                       <Card>
-                        <CardImage className={images.thumbs.length > 1 ? 'carousel' : ''}>
+                        <CardImage className={images.length > 1 ? 'carousel' : ''}>
                           <div className="swiper-container">
                             <div className="swiper-wrapper">
-                              {images.thumbs.map((thumb, index) => (
+                              {images.map((image, index) => (
                                 <div className="swiper-slide" key={index}>
-                                  <Image isRatio='4:3' src={thumb} data-image={images.full[index]} className="thumb-image" />
+                                  <Image isRatio='4:3' src={image.childImageSharp.fluid.src} className="thumb-image" />
                                 </div>
                               ))}
                             </div>
@@ -166,7 +166,7 @@ class IndexPage extends React.Component {
                             <div className="swiper-pagination"></div>
                             <div className="swiper-button-prev"></div>
                             <div className="swiper-button-next"></div>
-                        </div>
+                          </div>
 
                         </CardImage>
                         <CardContent>
@@ -231,17 +231,21 @@ export const query = graphql`
         whatsapp
       }
     }
-    allCatalogJson(filter: {publish: {eq: true}}) {
+    allContentJson(filter: {catalog: {elemMatch: {publish: {eq: true}}}}) {
       nodes {
-        categories
-        description
-        id
-        price
-        publish
-        title
-        images {
-          full
-          thumbs
+        catalog {
+          categories
+          description
+          price
+          publish
+          title
+          images {
+            childImageSharp {
+              fluid(maxWidth: 1280) {
+                src
+              }
+            }
+          }
         }
       }
     }
