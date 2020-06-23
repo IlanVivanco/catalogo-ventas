@@ -27,7 +27,6 @@ import {
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Hero from "../components/hero"
-import catalog from "../content/catalog.json"
 import { Columns } from "bloomer/lib/grid/Columns"
 import Swiper from 'swiper';
 
@@ -37,7 +36,7 @@ class IndexPage extends React.Component {
     super(props);
 
     this.page = props.data.site.siteMetadata;
-    this.products = this.publishedProducts(catalog);
+    this.products = props.data.allCatalogJson.nodes;
     this.categories = this.setCategories();
 
     this.state = {
@@ -230,6 +229,20 @@ export const query = graphql`
         description
         more
         whatsapp
+      }
+    }
+    allCatalogJson(filter: {publish: {eq: true}}) {
+      nodes {
+        categories
+        description
+        id
+        price
+        publish
+        title
+        images {
+          full
+          thumbs
+        }
       }
     }
   }
