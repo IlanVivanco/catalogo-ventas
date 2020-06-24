@@ -14,7 +14,7 @@
       "title": "Set de Jardinería",
       "description": "Marca: Roots. Incluye pala, cultivador y desmalezador.",
       "price": 350,
-      "images": ["../images/catalogo/set-de-jardineria-1.jpg"]
+      "images": ["../images/catalogo/herramientas-jardineria.jpg"]
     },
     {
       "publish": true,
@@ -23,8 +23,8 @@
       "description": "Marca: Robust. Modelo: 9013000.",
       "price": 12000,
       "images": [
-        "../images/catalogo/banco-de-trabajo-1.jpg",
-        "../images/catalogo/banco-de-trabajo-2.jpg"
+        "../images/catalogo/banco-1.jpg",
+        "../images/catalogo/banco-2.jpg"
       ]
     },
     {
@@ -97,7 +97,7 @@
       "title": "Guitarra",
       "description": "Criolla",
       "price": 3000,
-      "images": ["../images/placeholder.jpg"]
+      "images": ["../images/catalogo/guitarra.jpg"]
     },
     {
       "publish": true,
@@ -105,7 +105,7 @@
       "title": "Pileta de Lona",
       "description": "Marca: Pelopincho. Modelo: 1055. Medidas: 3m x 2m x Ccm. Incluye: kit de reparación, bomba para filtrar agua, un filtro de repuesto.",
       "price": 5000,
-      "images": ["../images/placeholder.jpg"]
+      "images": ["../images/catalogo/pileta.jpg"]
     },
     {
       "publish": true,
@@ -121,7 +121,7 @@
       "title": "Turbo Ventilador",
       "description": "Marca: Indelplas. Medidas: Acm x Bcm.",
       "price": 2500,
-      "images": ["../images/placeholder.jpg"]
+      "images": ["../images/catalogo/ventilador.jpg"]
     },
     {
       "publish": true,
@@ -129,7 +129,11 @@
       "title": "GoPro",
       "description": "Modelo: Hero 4. Cámara en muy buen estado. Tres baterías. Muchos accesorios (ver foto). Carcasa sumergible hasta 5m. Incluye estuche para guardar todo.",
       "price": 15000,
-      "images": ["../images/placeholder.jpg"]
+      "images": [
+        "../images/catalogo/gopro-1.jpg",
+        "../images/catalogo/gopro-2.jpg",
+        "../images/catalogo/gopro-3.jpg"
+      ]
     },
     {
       "publish": true,
@@ -161,10 +165,7 @@
       "title": "Mouse Inalámbrico",
       "description": "Marca: Microsoft.",
       "price": 2500,
-      "images": [
-        "/elementos/full/mouse-microsoft-1.jpg",
-        "/elementos/full/mouse-microsoft-2.jpg"
-      ]
+      "images": ["../images/catalogo/mouse-1.jpg"]
     },
     {
       "publish": true,
@@ -188,7 +189,7 @@
       "title": "Teclado Inalámbrico",
       "description": "Marca: Logitech",
       "price": 1500,
-      "images": ["../images/placeholder.jpg"]
+      "images": ["../images/catalogo/teclado.jpg"]
     },
     {
       "publish": true,
@@ -196,7 +197,10 @@
       "title": "TV Led 32''",
       "description": "Marca: Samsung. Modelo: LN32D550K7G. Se vende con el soporte para pared.",
       "price": 1500,
-      "images": ["../images/placeholder.jpg"]
+      "images": [
+        "../images/catalogo/tele-32-1.jpg",
+        "../images/catalogo/tele-32-2.jpg"
+      ]
     },
     {
       "publish": true,
@@ -204,7 +208,10 @@
       "title": "Plancha",
       "description": "Marca: Philips. Modelo: xxx. Muy poco uso jeje",
       "price": 1500,
-      "images": ["../images/placeholder.jpg"]
+      "images": [
+        "../images/catalogo/plancha-1.jpg",
+        "../images/catalogo/plancha-2.jpg"
+      ]
     },
     {
       "publish": true,
@@ -212,15 +219,15 @@
       "title": "Planchita",
       "description": "Marca: Gama",
       "price": 1000,
-      "images": ["../images/placeholder.jpg"]
+      "images": ["../images/catalogo/plnachita-pelo.jpg"]
     },
     {
       "publish": true,
       "categories": ["Electrodomésticos"],
-      "title": "Buclera-1",
+      "title": "Buclera",
       "description": "Marca: Gama",
       "price": 1000,
-      "images": ["../images/placeholder.jpg"]
+      "images": ["../images/catalogo/buclera.jpg"]
     },
     {
       "publish": true,
@@ -236,7 +243,7 @@
       "title": "Cafetera de Filtro",
       "description": "Marca: Black & Decker",
       "price": 3500,
-      "images": ["../images/placeholder.jpg"]
+      "images": ["../images/catalogo/cafetera-filtro.jpg"]
     },
     {
       "publish": true,
@@ -244,7 +251,7 @@
       "title": "Cafetera de Vidrio",
       "description": "...",
       "price": 100,
-      "images": ["../images/placeholder.jpg"]
+      "images": ["../images/catalogo/cafetera-vidrio.jpg"]
     },
     {
       "publish": true,
@@ -252,7 +259,7 @@
       "title": "Cafeterita Italiana",
       "description": "Marca: Bialetti. Mini para 2 pocillos",
       "price": 100,
-      "images": ["../images/placeholder.jpg"]
+      "images": ["../images/catalogo/cafetera-bialetti.jpg"]
     },
     {
       "publish": true,
@@ -260,7 +267,7 @@
       "title": "Licuadora",
       "description": "Marca: Philips. Potencia: 800W",
       "price": 3500,
-      "images": ["../images/placeholder.jpg"]
+      "images": ["../images/catalogo/licuadora.jpg"]
     },
     {
       "publish": true,
@@ -268,7 +275,10 @@
       "title": "Maquina de Pastas",
       "description": "Incluye accesorio para cortar fideos.",
       "price": 2000,
-      "images": ["../images/placeholder.jpg"]
+      "images": [
+        "../images/catalogo/pastalinda-1.jpg",
+        "../images/catalogo/pastalinda-2.jpg"
+      ]
     },
     {
       "publish": true,
@@ -276,7 +286,10 @@
       "title": "Pancheta",
       "description": "Plancha de hierro. Medidas: Acm x Bcm.",
       "price": 900,
-      "images": ["../images/placeholder.jpg"]
+      "images": [
+        "../images/catalogo/plancheta-1.jpg",
+        "../images/catalogo/plancheta-2.jpg"
+      ]
     },
     {
       "publish": true,
@@ -284,7 +297,10 @@
       "title": "Sandwichera",
       "description": "Tiene algunos detalles, pero funciona perfecto.",
       "price": 1500,
-      "images": ["../images/placeholder.jpg"]
+      "images": [
+        "../images/catalogo/sandwichera-1.jpg",
+        "../images/catalogo/sandwichera-2.jpg"
+      ]
     },
     {
       "publish": true,
@@ -324,7 +340,10 @@
       "title": "Bordeadora",
       "description": "Marca: Black & Decker. Modelo: GL600N.",
       "price": 1800,
-      "images": ["../images/placeholder.jpg"]
+      "images": [
+        "../images/catalogo/bordeadora-1.jpg",
+        "../images/catalogo/bordeadora-2.jpg"
+      ]
     },
     {
       "publish": true,
@@ -332,7 +351,7 @@
       "title": "Caladora",
       "description": "Marca: Black & Decker. Incluye set de hojas varias para caladora punta T marca Stanley por 16 unidades.",
       "price": 2200,
-      "images": ["../images/placeholder.jpg"]
+      "images": ["../images/catalogo/caladora.jpg"]
     },
     {
       "publish": true,
@@ -340,7 +359,10 @@
       "title": "Escalera de Aluminio",
       "description": "Marca: CrosGrob. Modelo: Titanium. 4x4 (?)",
       "price": 3800,
-      "images": ["../images/placeholder.jpg"]
+      "images": [
+        "../images/catalogo/escalera-1.jpg",
+        "../images/catalogo/escalera-2.jpg"
+      ]
     },
     {
       "publish": true,
@@ -348,7 +370,7 @@
       "title": "Hidrolavadora",
       "description": "Marca: Karchër. Modelo: K2 Dakar. Trae accesorios y jabón multiuso",
       "price": 4000,
-      "images": ["../images/placeholder.jpg"]
+      "images": ["../images/catalogo/hidrolavadora.jpg"]
     },
     {
       "publish": true,
@@ -356,7 +378,7 @@
       "title": "Lijadora",
       "description": "Marca: Stanley.",
       "price": 3500,
-      "images": ["../images/placeholder.jpg"]
+      "images": ["../images/catalogo/lijadora.jpg"]
     },
     {
       "publish": true,
@@ -364,7 +386,10 @@
       "title": "Juego de Llaves de Tubo",
       "description": "Marca: Stanley, 79 piezas.",
       "price": 13000,
-      "images": ["../images/placeholder.jpg"]
+      "images": [
+        "../images/catalogo/llaves-de-tubo-1.jpg",
+        "../images/catalogo/llaves-de-tubo-2.jpg"
+      ]
     },
     {
       "publish": true,
@@ -372,7 +397,7 @@
       "title": "Taladro",
       "description": "Marca: Black & Decker",
       "price": 3000,
-      "images": ["../images/placeholder.jpg"]
+      "images": ["../images/catalogo/taladro-cable.jpg"]
     },
     {
       "publish": true,
@@ -380,7 +405,10 @@
       "title": "Taladro Inalámbrico",
       "description": "Marca: DeWalt. Modelo: DCD796",
       "price": 25000,
-      "images": ["../images/placeholder.jpg"]
+      "images": [
+        "../images/catalogo/taladro-1.jpg",
+        "../images/catalogo/taladro-2.jpg"
+      ]
     },
     {
       "publish": true,
@@ -388,7 +416,10 @@
       "title": "Escritorio",
       "description": "Marca: Valenziana. Modelo: S23. Disponibles 2 unidades. ",
       "price": 7500,
-      "images": ["../images/placeholder.jpg"]
+      "images": [
+        "../images/catalogo/escritorio-1.jpg",
+        "../images/catalogo/escritorio-2.jpg"
+      ]
     },
     {
       "publish": true,
@@ -401,7 +432,7 @@
     {
       "publish": true,
       "categories": ["Muebles"],
-      "title": "Estante",
+      "title": "Mueble colgante",
       "description": "Medidas: Acm x Bcm x Ccm.",
       "price": 1500,
       "images": ["../images/placeholder.jpg"]
@@ -412,7 +443,7 @@
       "title": "Mesa de Luz",
       "description": "De pino. Medidas: Acm x Bcm x Ccm. Tenemos 2 unidades. Incluimos velador (?).",
       "price": 800,
-      "images": ["../images/placeholder.jpg"]
+      "images": ["../images/catalogo/mesa-de-luz.jpg"]
     },
     {
       "publish": true,
@@ -420,7 +451,7 @@
       "title": "Mesa Tv",
       "description": "De pino. Medidas: Acm x Bcm x Ccm.",
       "price": 2000,
-      "images": ["../images/placeholder.jpg"]
+      "images": ["../images/catalogo/mueble-tv.jpg"]
     },
     {
       "publish": true,
@@ -437,6 +468,14 @@
       "description": "...",
       "price": 4000,
       "images": ["../images/placeholder.jpg"]
+    },
+    {
+      "publish": true,
+      "categories": ["Varios"],
+      "title": "Velador",
+      "description": "...",
+      "price": 4000,
+      "images": ["../images/catalogo/velador.jpg"]
     }
   ]
 }
