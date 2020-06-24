@@ -151,7 +151,7 @@ class IndexPage extends React.Component {
                     ))}
                   </Column>
                   {this.state.filteredProducts.map(({ title, description, price, images, categories }, index) => (
-                    <Column isSize="1/3" key={index}>
+                    <Column isSize="1/3" key={index} className="catalog-item">
                       <Card>
                         <CardImage className={images.length > 1 ? 'carousel' : ''}>
                           <div className="swiper-container">
