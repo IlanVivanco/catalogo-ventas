@@ -158,7 +158,7 @@ class IndexPage extends React.Component {
                             <div className="swiper-wrapper">
                               {images.map((image, index) => (
                                 <div className="swiper-slide" key={index}>
-                                  <Image isRatio='4:3' src={image.childImageSharp.fluid.src} className="thumb-image" />
+                                  <Image isRatio='4:3' src={image?.childImageSharp.fluid.src} className="thumb-image" />
                                 </div>
                               ))}
                             </div>
