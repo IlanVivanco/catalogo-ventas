@@ -114,6 +114,10 @@ $footer-padding: 1em;
     & + .image {
       display: none;
     }
+
+    img {
+      object-fit: cover;
+    }
   }
 
   .media {
@@ -146,7 +150,7 @@ $footer-padding: 1em;
     }
   }
 
-  &-content{
+  &-content {
     padding-bottom: 4em;
   }
 
@@ -171,19 +175,30 @@ $footer-padding: 1em;
 .catalog-item {
   display: inline-flex;
 
-
   @media (max-width: 767px) {
     display: block;
   }
 }
 
 .modal-content {
-  max-height: none;
-  width: 60vw;
-  overflow: hidden;
+  // max-height: none;
+  width: 800px;
+  max-width: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  // overflow: hidden;
 
   @media (max-width: 767px) {
-    width: 100vw;
+    height: 100vh;
+    max-width: 90vw;
+
+    figure{
+      height: 100%;
+    }
   }
 }
 

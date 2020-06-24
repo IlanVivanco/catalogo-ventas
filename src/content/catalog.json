@@ -2,237 +2,162 @@
   "catalog": [
     {
       "publish": true,
-      "categories": [
-        "Varios"
-      ],
+      "categories": ["Varios"],
       "title": "Alacena exterior",
       "description": "Marca: Keter. Modelo: 17202557. Medidas: Acm x Bcm x Ccm",
       "price": 6000,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Varios"
-      ],
+      "categories": ["Varios"],
       "title": "Set de Jardinería",
       "description": "Marca: Roots. Incluye pala, cultivador y desmalezador.",
       "price": 350,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/catalogo/set-de-jardineria-1.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Herramientas"
-      ],
+      "categories": ["Herramientas"],
       "title": "Banco de trabajo",
       "description": "Marca: Robust. Modelo: 9013000.",
       "price": 12000,
       "images": [
-        "../images/catalogo/buclera-1.jpg"
+        "../images/catalogo/banco-de-trabajo-1.jpg",
+        "../images/catalogo/banco-de-trabajo-2.jpg"
       ]
     },
     {
       "publish": true,
-      "categories": [
-        "Muebles"
-      ],
+      "categories": ["Muebles"],
       "title": "Biblioteca",
       "description": "Tenemos dos. La de color blanco, medidas: Acm x Bcm x Ccm. La de color marrón, medidas: Acm x Bcm x Ccm",
       "price": 1000,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Varios"
-      ],
+      "categories": ["Varios"],
       "title": "Bicicleta",
       "description": "De paseo con cambios. Rodado 26, muy poco uso. Consultar por sillita infantil.",
       "price": 15000,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Varios"
-      ],
+      "categories": ["Varios"],
       "title": "Bicicleta",
       "description": "Playera. Rodado 26. Cubiertas, cámaras y asiento nuevos. Consultar por sillita infantil.",
       "price": 8000,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Camping"
-      ],
+      "categories": ["Camping"],
       "title": "Bolsa de dormir + Aislante",
       "description": "Disponibles dos unidades.",
       "price": 2500,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Camping"
-      ],
+      "categories": ["Camping"],
       "title": "Carpa para 4 personas",
       "description": "Marca: Waterdog. Modelo: Kira 4.",
       "price": 8000,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Camping"
-      ],
+      "categories": ["Camping"],
       "title": "Colchón inflable",
       "description": "Una plaza. Bomba para inflado incorporada. Un sólo uso.",
       "price": 1500,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Camping"
-      ],
+      "categories": ["Camping"],
       "title": "Conservadora",
       "description": "Marca: Coleman. Medidas: Acm x Bcm x Ccm.",
       "price": 500,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Camping"
-      ],
+      "categories": ["Camping"],
       "title": "Parrilla",
       "description": "Plegable. Medidas: Acm x Bcm x Ccm. Se entrega con accesorios parrilleros.",
       "price": 500,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Varios"
-      ],
+      "categories": ["Varios"],
       "title": "Guitarra",
       "description": "Criolla",
       "price": 3000,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Varios"
-      ],
+      "categories": ["Varios"],
       "title": "Pileta de Lona",
       "description": "Marca: Pelopincho. Modelo: 1055. Medidas: 3m x 2m x Ccm. Incluye: kit de reparación, bomba para filtrar agua, un filtro de repuesto.",
       "price": 5000,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Varios"
-      ],
+      "categories": ["Varios"],
       "title": "Puerta de seguridad",
       "description": "Marca: xxxx. Medidas: Acm x Bcm. Incluye: extensión Acm x Bcm.",
       "price": 3000,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Varios"
-      ],
+      "categories": ["Varios"],
       "title": "Turbo Ventilador",
       "description": "Marca: Indelplas. Medidas: Acm x Bcm.",
       "price": 2500,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Electrónica"
-      ],
+      "categories": ["Electrónica"],
       "title": "GoPro",
       "description": "Modelo: Hero 4. Cámara en muy buen estado. Tres baterías. Muchos accesorios (ver foto). Carcasa sumergible hasta 5m. Incluye estuche para guardar todo.",
       "price": 15000,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Electrónica"
-      ],
+      "categories": ["Electrónica"],
       "title": "Impresora Laser B&N",
       "description": "Marca: Brother. Modelo: DCP-1510. Toner con poco uso",
       "price": 8000,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Electrónica"
-      ],
+      "categories": ["Electrónica"],
       "title": "Minicomponente",
       "description": "Marca: Sony. Tiene USB",
       "price": 1500,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Electrónica"
-      ],
+      "categories": ["Electrónica"],
       "title": "Monopode",
       "description": "Marca: Manfrotto.",
       "price": 6000,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Electrónica"
-      ],
+      "categories": ["Electrónica"],
       "title": "Mouse Inalámbrico",
       "description": "Marca: Microsoft.",
       "price": 2500,
@@ -243,415 +168,275 @@
     },
     {
       "publish": true,
-      "categories": [
-        "Electrónica"
-      ],
+      "categories": ["Electrónica"],
       "title": "Radio Reloj",
       "description": "Marca: Sony",
       "price": 1500,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Electrónica"
-      ],
+      "categories": ["Electrónica"],
       "title": "Tableta Digitalizadora + Wifi",
       "description": "Marca: Wacom. Modelo: Intuos 5.",
       "price": 20000,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Electrónica"
-      ],
+      "categories": ["Electrónica"],
       "title": "Teclado Inalámbrico",
       "description": "Marca: Logitech",
       "price": 1500,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Electrónica"
-      ],
+      "categories": ["Electrónica"],
       "title": "TV Led 32''",
       "description": "Marca: Samsung. Modelo: LN32D550K7G. Se vende con el soporte para pared.",
       "price": 1500,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Electrodomésticos"
-      ],
+      "categories": ["Electrodomésticos"],
       "title": "Plancha",
       "description": "Marca: Philips. Modelo: xxx. Muy poco uso jeje",
       "price": 1500,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Electrodomésticos"
-      ],
+      "categories": ["Electrodomésticos"],
       "title": "Planchita",
       "description": "Marca: Gama",
       "price": 1000,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Electrodomésticos"
-      ],
+      "categories": ["Electrodomésticos"],
       "title": "Buclera-1",
       "description": "Marca: Gama",
       "price": 1000,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Electrodomésticos"
-      ],
+      "categories": ["Electrodomésticos"],
       "title": "Secador de pelo",
       "description": "...",
       "price": 1000,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Electrodomésticos",
-        "Cocina"
-      ],
+      "categories": ["Electrodomésticos", "Cocina"],
       "title": "Cafetera de Filtro",
       "description": "Marca: Black & Decker",
       "price": 3500,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Electrodomésticos",
-        "Cocina"
-      ],
+      "categories": ["Electrodomésticos", "Cocina"],
       "title": "Cafetera de Vidrio",
       "description": "...",
       "price": 100,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Electrodomésticos",
-        "Cocina"
-      ],
+      "categories": ["Electrodomésticos", "Cocina"],
       "title": "Cafeterita Italiana",
       "description": "Marca: Bialetti. Mini para 2 pocillos",
       "price": 100,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Electrodomésticos",
-        "Cocina"
-      ],
+      "categories": ["Electrodomésticos", "Cocina"],
       "title": "Licuadora",
       "description": "Marca: Philips. Potencia: 800W",
       "price": 3500,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Cocina"
-      ],
+      "categories": ["Cocina"],
       "title": "Maquina de Pastas",
       "description": "Incluye accesorio para cortar fideos.",
       "price": 2000,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Cocina"
-      ],
+      "categories": ["Cocina"],
       "title": "Pancheta",
       "description": "Plancha de hierro. Medidas: Acm x Bcm.",
       "price": 900,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Cocina"
-      ],
+      "categories": ["Cocina"],
       "title": "Sandwichera",
       "description": "Tiene algunos detalles, pero funciona perfecto.",
       "price": 1500,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Juegos"
-      ],
+      "categories": ["Juegos"],
       "title": "Carrera de Mente",
       "description": "...",
       "price": 1000,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Juegos"
-      ],
+      "categories": ["Juegos"],
       "title": "Crucigrama",
       "description": "Tipo Scrabell",
       "price": 700,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Juegos"
-      ],
+      "categories": ["Juegos"],
       "title": "Póker",
       "description": "...",
       "price": 1200,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Juegos"
-      ],
+      "categories": ["Juegos"],
       "title": "T.E.G.",
       "description": "Nunca ataques a tu esposa...",
       "price": 1000,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Herramientas"
-      ],
+      "categories": ["Herramientas"],
       "title": "Bordeadora",
       "description": "Marca: Black & Decker. Modelo: GL600N.",
       "price": 1800,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Herramientas"
-      ],
+      "categories": ["Herramientas"],
       "title": "Caladora",
       "description": "Marca: Black & Decker. Incluye set de hojas varias para caladora punta T marca Stanley por 16 unidades.",
       "price": 2200,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Herramientas"
-      ],
+      "categories": ["Herramientas"],
       "title": "Escalera de Aluminio",
       "description": "Marca: CrosGrob. Modelo: Titanium. 4x4 (?)",
       "price": 3800,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Herramientas"
-      ],
+      "categories": ["Herramientas"],
       "title": "Hidrolavadora",
       "description": "Marca: Karchër. Modelo: K2 Dakar. Trae accesorios y jabón multiuso",
       "price": 4000,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Herramientas"
-      ],
+      "categories": ["Herramientas"],
       "title": "Lijadora",
       "description": "Marca: Stanley.",
       "price": 3500,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Herramientas"
-      ],
+      "categories": ["Herramientas"],
       "title": "Juego de Llaves de Tubo",
       "description": "Marca: Stanley, 79 piezas.",
       "price": 13000,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Herramientas"
-      ],
+      "categories": ["Herramientas"],
       "title": "Taladro",
       "description": "Marca: Black & Decker",
       "price": 3000,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Herramientas"
-      ],
+      "categories": ["Herramientas"],
       "title": "Taladro Inalámbrico",
       "description": "Marca: DeWalt. Modelo: DCD796",
       "price": 25000,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Muebles"
-      ],
+      "categories": ["Muebles"],
       "title": "Escritorio",
       "description": "Marca: Valenziana. Modelo: S23. Disponibles 2 unidades. ",
       "price": 7500,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Muebles"
-      ],
+      "categories": ["Muebles"],
       "title": "Estante flotante",
       "description": "Modelo Z",
       "price": 1000,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Muebles"
-      ],
+      "categories": ["Muebles"],
       "title": "Estante",
       "description": "Medidas: Acm x Bcm x Ccm.",
       "price": 1500,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Muebles"
-      ],
+      "categories": ["Muebles"],
       "title": "Mesa de Luz",
       "description": "De pino. Medidas: Acm x Bcm x Ccm. Tenemos 2 unidades. Incluimos velador (?).",
       "price": 800,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Muebles"
-      ],
+      "categories": ["Muebles"],
       "title": "Mesa Tv",
       "description": "De pino. Medidas: Acm x Bcm x Ccm.",
       "price": 2000,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Muebles"
-      ],
+      "categories": ["Muebles"],
       "title": "Perchero",
       "description": "Modelo Zig Zag.",
       "price": 800,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     },
     {
       "publish": true,
-      "categories": [
-        "Muebles"
-      ],
+      "categories": ["Muebles"],
       "title": "Silla de Escritorio",
       "description": "...",
       "price": 4000,
-      "images": [
-        "../images/catalogo/buclera-1.jpg"
-      ]
+      "images": ["../images/placeholder.jpg"]
     }
   ]
 }
