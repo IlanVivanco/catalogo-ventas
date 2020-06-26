@@ -2,6 +2,7 @@
   "catalog": [
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Varios"],
       "title": "Alacena exterior",
       "description": "Marca: Keter. Modelo: 17202557. Medidas: Acm x Bcm x Ccm",
@@ -10,6 +11,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Varios"],
       "title": "Set de Jardinería",
       "description": "Marca: Roots. Incluye pala, cultivador y desmalezador.",
@@ -18,6 +20,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Herramientas"],
       "title": "Banco de trabajo",
       "description": "Marca: Robust. Modelo: 9013000.",
@@ -29,6 +32,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Muebles"],
       "title": "Biblioteca",
       "description": "Tenemos dos. La de color blanco, medidas: Acm x Bcm x Ccm. La de color marrón, medidas: Acm x Bcm x Ccm",
@@ -40,6 +44,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Varios"],
       "title": "Bicicleta",
       "description": "De paseo con cambios. Rodado 26, muy poco uso. Consultar por sillita infantil.",
@@ -48,6 +53,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Varios"],
       "title": "Bicicleta",
       "description": "Playera. Rodado 26. Cubiertas, cámaras y asiento nuevos. Consultar por sillita infantil.",
@@ -56,6 +62,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Camping"],
       "title": "Bolsa de dormir + Aislante",
       "description": "Disponibles dos unidades.",
@@ -64,6 +71,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Camping"],
       "title": "Carpa para 4 personas",
       "description": "Marca: Waterdog. Modelo: Kira 4.",
@@ -75,6 +83,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Camping"],
       "title": "Colchón inflable",
       "description": "Una plaza. Bomba para inflado incorporada. Un sólo uso.",
@@ -83,6 +92,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Camping"],
       "title": "Conservadora",
       "description": "Marca: Coleman. Medidas: Acm x Bcm x Ccm.",
@@ -91,6 +101,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Camping"],
       "title": "Parrilla",
       "description": "Plegable. Medidas: Acm x Bcm x Ccm. Se entrega con accesorios parrilleros.",
@@ -99,6 +110,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Varios"],
       "title": "Guitarra",
       "description": "Criolla",
@@ -107,6 +119,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Varios"],
       "title": "Pileta de Lona",
       "description": "Marca: Pelopincho. Modelo: 1055. Medidas: 3m x 2m x Ccm. Incluye: kit de reparación, bomba para filtrar agua, un filtro de repuesto.",
@@ -115,6 +128,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Varios"],
       "title": "Puerta de seguridad",
       "description": "Marca: xxxx. Medidas: Acm x Bcm. Incluye: extensión Acm x Bcm.",
@@ -123,6 +137,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Varios"],
       "title": "Turbo Ventilador",
       "description": "Marca: Indelplas. Medidas: Acm x Bcm.",
@@ -131,6 +146,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Electrónica"],
       "title": "GoPro",
       "description": "Modelo: Hero 4. Cámara en muy buen estado. Tres baterías. Muchos accesorios (ver foto). Carcasa sumergible hasta 5m. Incluye estuche para guardar todo.",
@@ -143,6 +159,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Electrónica"],
       "title": "Impresora Laser B&N",
       "description": "Marca: Brother. Modelo: DCP-1510. Toner con poco uso",
@@ -151,6 +168,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Electrónica"],
       "title": "Minicomponente",
       "description": "Marca: Sony. Tiene USB",
@@ -162,6 +180,7 @@
     },
     {
       "publish": true,
+      "stage": 2,
       "categories": ["Fotografía"],
       "title": "Cámara Reflex",
       "description": "Marca: Canon 70D",
@@ -174,6 +193,7 @@
     },
     {
       "publish": true,
+      "stage": 2,
       "categories": ["Fotografía"],
       "title": "Monopode",
       "description": "Marca: Manfrotto.",
@@ -182,6 +202,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Electrónica"],
       "title": "Mouse Inalámbrico",
       "description": "Marca: Microsoft.",
@@ -190,6 +211,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Electrónica"],
       "title": "Radio Reloj",
       "description": "Marca: Sony",
@@ -198,6 +220,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Electrónica"],
       "title": "Tableta Digitalizadora + Wifi",
       "description": "Marca: Wacom. Modelo: Intuos 5.",
@@ -206,6 +229,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Electrónica"],
       "title": "Teclado Inalámbrico",
       "description": "Marca: Logitech",
@@ -214,6 +238,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Electrónica"],
       "title": "TV Led 32''",
       "description": "Marca: Samsung. Modelo: LN32D550K7G. Se vende con el soporte para pared.",
@@ -225,6 +250,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Electrodomésticos"],
       "title": "Plancha",
       "description": "Marca: Philips. Modelo: xxx. Muy poco uso jeje",
@@ -236,6 +262,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Electrodomésticos"],
       "title": "Planchita",
       "description": "Marca: Gama",
@@ -244,6 +271,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Electrodomésticos"],
       "title": "Buclera",
       "description": "Marca: Gama",
@@ -252,6 +280,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Electrodomésticos"],
       "title": "Secador de pelo",
       "description": "...",
@@ -260,6 +289,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Electrodomésticos", "Cocina"],
       "title": "Cafetera de Filtro",
       "description": "Marca: Black & Decker",
@@ -268,6 +298,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Electrodomésticos", "Cocina"],
       "title": "Cafetera de Vidrio",
       "description": "...",
@@ -276,6 +307,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Electrodomésticos", "Cocina"],
       "title": "Cafeterita Italiana",
       "description": "Marca: Bialetti. Mini para 2 pocillos",
@@ -284,6 +316,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Electrodomésticos", "Cocina"],
       "title": "Licuadora",
       "description": "Marca: Philips. Potencia: 800W",
@@ -292,6 +325,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Cocina"],
       "title": "Maquina de Pastas",
       "description": "Incluye accesorio para cortar fideos.",
@@ -303,6 +337,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Cocina"],
       "title": "Pancheta",
       "description": "Plancha de hierro. Medidas: Acm x Bcm.",
@@ -314,6 +349,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Cocina"],
       "title": "Sandwichera",
       "description": "Tiene algunos detalles, pero funciona perfecto.",
@@ -325,6 +361,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Juegos"],
       "title": "Carrera de Mente",
       "description": "...",
@@ -333,6 +370,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Juegos"],
       "title": "Crucigrama",
       "description": "Tipo Scrabell",
@@ -341,6 +379,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Juegos"],
       "title": "Póker",
       "description": "...",
@@ -352,6 +391,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Juegos"],
       "title": "T.E.G.",
       "description": "Nunca ataques a tu esposa...",
@@ -360,6 +400,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Juegos"],
       "title": "T.E.G. Cartas",
       "description": "Nunca ataques a tu esposa...",
@@ -368,6 +409,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Herramientas"],
       "title": "Bordeadora",
       "description": "Marca: Black & Decker. Modelo: GL600N.",
@@ -379,6 +421,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Herramientas"],
       "title": "Caladora",
       "description": "Marca: Black & Decker. Incluye set de hojas varias para caladora punta T marca Stanley por 16 unidades.",
@@ -387,6 +430,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Herramientas"],
       "title": "Escalera de Aluminio",
       "description": "Marca: CrosGrob. Modelo: Titanium. 4x4 (?)",
@@ -398,6 +442,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Herramientas"],
       "title": "Hidrolavadora",
       "description": "Marca: Karchër. Modelo: K2 Dakar. Trae accesorios y jabón multiuso",
@@ -406,6 +451,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Herramientas"],
       "title": "Lijadora",
       "description": "Marca: Stanley.",
@@ -414,6 +460,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Herramientas"],
       "title": "Juego de Llaves de Tubo",
       "description": "Marca: Stanley, 79 piezas.",
@@ -425,6 +472,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Herramientas"],
       "title": "Taladro",
       "description": "Marca: Black & Decker",
@@ -433,6 +481,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Herramientas"],
       "title": "Taladro Inalámbrico",
       "description": "Marca: DeWalt. Modelo: DCD796",
@@ -444,6 +493,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Muebles"],
       "title": "Escritorio",
       "description": "Marca: Valenziana. Modelo: S23. Disponibles 2 unidades. ",
@@ -455,6 +505,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Muebles"],
       "title": "Estante flotante",
       "description": "Modelo Z",
@@ -463,6 +514,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Muebles"],
       "title": "Mueble colgante",
       "description": "Medidas: Acm x Bcm x Ccm.",
@@ -471,6 +523,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Muebles"],
       "title": "Mesa de Luz",
       "description": "De pino. Medidas: Acm x Bcm x Ccm. Tenemos 2 unidades. Incluimos velador (?).",
@@ -479,6 +532,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Muebles"],
       "title": "Mesa Tv",
       "description": "De pino. Medidas: Acm x Bcm x Ccm.",
@@ -487,6 +541,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Muebles"],
       "title": "Perchero",
       "description": "Modelo Zig Zag.",
@@ -495,6 +550,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Muebles"],
       "title": "Silla de Escritorio",
       "description": "...",
@@ -503,6 +559,7 @@
     },
     {
       "publish": true,
+      "stage": 1,
       "categories": ["Varios"],
       "title": "Velador",
       "description": "...",

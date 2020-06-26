@@ -150,9 +150,9 @@ class IndexPage extends React.Component {
                       <Button isSize="small" isColor="info" className="filter-item" onClick={(e) => this.filterList(el)} key={index}>{el}</Button>
                     ))}
                   </Column>
-                  {this.state.filteredProducts.map(({ title, description, price, images, categories }, index) => (
+                  {this.state.filteredProducts.map(({ title, description, price, images, categories, stage }, index) => (
                     <Column isSize="1/3" key={index} className="catalog-item">
-                      <Card>
+                      <Card className={stage == 2 ? 'soon' : ''}>
                         <CardImage className={images.length > 1 ? 'carousel' : ''}>
                           <div className="swiper-container">
                             <div className="swiper-wrapper">
@@ -167,8 +167,8 @@ class IndexPage extends React.Component {
                             <div className="swiper-button-prev"></div>
                             <div className="swiper-button-next"></div>
                           </div>
-
                         </CardImage>
+
                         <CardContent>
                           <Media>
                             <MediaContent>
@@ -238,6 +238,7 @@ export const query = graphql`
           description
           price
           publish
+          stage
           title
           images {
             childImageSharp {
