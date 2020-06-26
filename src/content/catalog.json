@@ -165,7 +165,7 @@
       "categories": ["Fotografía"],
       "title": "Cámara Reflex",
       "description": "Marca: Canon 70D",
-      "price": "??",
+      "price": 0,
       "images": [
         "../images/catalogo/canon-70d-1.jpg",
         "../images/catalogo/canon-70d-2.jpg",
