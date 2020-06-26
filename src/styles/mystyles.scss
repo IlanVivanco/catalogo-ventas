@@ -79,6 +79,12 @@ $footer-padding: 1em;
   margin-right: 1.5rem;
 }
 
+.navbar {
+  position: sticky;
+  width: 100%;
+  top: 0;
+}
+
 .navbar-brand {
   width: 100%;
 }

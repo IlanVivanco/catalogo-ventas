@@ -28,9 +28,9 @@ export default class navbar extends Component {
       <Navbar>
         <Container>
           <NavbarBrand>
-            <Link to="/" className="navbar-item">
+            <span className="navbar-item">
               {this.props.siteTitle}
-            </Link>
+            </span>
             <NavbarEnd>
               <NavbarItem>
                 <a href={this.props.whatsapp} className="navbar-item">

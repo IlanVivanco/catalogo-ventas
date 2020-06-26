@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Familia Vivanco Haag`,
-    description: `Nos estamos mudando, y vendemos la casa!`,
-    more: `Encontrá el catálogo de cosas que aún tenemos disponibles abajo.`,
+    title: `Catálogo de venta`,
+    description: `Hola! somos Ilán & Gise, nos estamos mudando y vendemos todo!`,
+    more: `Estamos en Puerto Madryn, si te interesa algún artículo esperamos tu consulta.`,
     author: `Ilán Vivanco`,
     whatsapp: `https://wa.me/5491157304817`,
     facebook: `http://m.me/ilanvivanco`,
