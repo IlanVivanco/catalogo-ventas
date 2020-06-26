@@ -1,9 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import {
-  // Link,
-  graphql,
-} from "gatsby"
+import { graphql } from "gatsby"
 import {
   Section,
   Container,
@@ -36,11 +33,16 @@ class IndexPage extends React.Component {
     super(props);
 
     this.page = props.data.site.siteMetadata;
-    this.products = props.data.allContentJson.nodes[0].catalog;
+
+    let products = props.data.allContentJson.nodes[0].catalog;
+    products = this.publishedProducts(products);
+    products = this.sortProducts(products);
+
+    this.products = products;
     this.categories = this.setCategories();
 
     this.state = {
-      filteredProducts: this.publishedProducts(this.products),
+      filteredProducts: products,
       categories: this.categories,
     }
   }
@@ -79,6 +81,12 @@ class IndexPage extends React.Component {
   publishedProducts(products) {
     return products.filter((el, index) => {
       return el.publish ? el : null;
+    });
+  }
+
+  sortProducts(products) {
+    return products.sort( (a, b) => {
+      return a.title.localeCompare(b.title);
     });
   }
 
@@ -152,7 +160,7 @@ class IndexPage extends React.Component {
                   </Column>
                   {this.state.filteredProducts.map(({ title, description, price, images, categories, stage }, index) => (
                     <Column isSize="1/3" key={index} className="catalog-item">
-                      <Card className={stage == 2 ? 'soon' : ''}>
+                      <Card className={stage === 2 ? 'soon' : ''}>
                         <CardImage className={images.length > 1 ? 'carousel' : ''}>
                           <div className="swiper-container">
                             <div className="swiper-wrapper">
