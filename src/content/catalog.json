@@ -33,7 +33,10 @@
       "title": "Biblioteca",
       "description": "Tenemos dos. La de color blanco, medidas: Acm x Bcm x Ccm. La de color marrón, medidas: Acm x Bcm x Ccm",
       "price": 1000,
-      "images": ["../images/placeholder.jpg"]
+      "images": [
+        "../images/catalogo/biblioteca-1.jpg",
+        "../images/catalogo/biblioteca-2.jpg"
+      ]
     },
     {
       "publish": true,
@@ -65,7 +68,10 @@
       "title": "Carpa para 4 personas",
       "description": "Marca: Waterdog. Modelo: Kira 4.",
       "price": 8000,
-      "images": ["../images/placeholder.jpg"]
+      "images": [
+        "../images/catalogo/carpa-1.jpg",
+        "../images/catalogo/carpa-2.jpg"
+      ]
     },
     {
       "publish": true,
@@ -149,11 +155,26 @@
       "title": "Minicomponente",
       "description": "Marca: Sony. Tiene USB",
       "price": 1500,
-      "images": ["../images/placeholder.jpg"]
+      "images": [
+        "../images/catalogo/minicomponente-1.jpg",
+        "../images/catalogo/minicomponente-2.jpg"
+      ]
     },
     {
       "publish": true,
-      "categories": ["Electrónica"],
+      "categories": ["Fotografía"],
+      "title": "Cámara Reflex",
+      "description": "Marca: Canon 70D",
+      "price": "??",
+      "images": [
+        "../images/catalogo/canon-70d-1.jpg",
+        "../images/catalogo/canon-70d-2.jpg",
+        "../images/catalogo/canon-70d-3.jpg"
+      ]
+    },
+    {
+      "publish": true,
+      "categories": ["Fotografía"],
       "title": "Monopode",
       "description": "Marca: Manfrotto.",
       "price": 6000,
@@ -308,7 +329,7 @@
       "title": "Carrera de Mente",
       "description": "...",
       "price": 1000,
-      "images": ["../images/placeholder.jpg"]
+      "images": ["../images/catalogo/carrera-de-mente.jpg"]
     },
     {
       "publish": true,
@@ -324,7 +345,10 @@
       "title": "Póker",
       "description": "...",
       "price": 1200,
-      "images": ["../images/placeholder.jpg"]
+      "images": [
+        "../images/catalogo/poker-1.jpg",
+        "../images/catalogo/poker-2.jpg"
+      ]
     },
     {
       "publish": true,
@@ -332,7 +356,15 @@
       "title": "T.E.G.",
       "description": "Nunca ataques a tu esposa...",
       "price": 1000,
-      "images": ["../images/placeholder.jpg"]
+      "images": ["../images/catalogo/teg.jpg"]
+    },
+    {
+      "publish": true,
+      "categories": ["Juegos"],
+      "title": "T.E.G. Cartas",
+      "description": "Nunca ataques a tu esposa...",
+      "price": 1000,
+      "images": ["../images/catalogo/teg-cartas.jpg"]
     },
     {
       "publish": true,
