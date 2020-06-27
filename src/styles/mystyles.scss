@@ -190,6 +190,27 @@ $footer-padding: 1em;
     }
   }
 
+  .content p {
+    line-height: 1.4;
+    height: 5.8em;
+    overflow-y: auto;
+    padding-right: 0.5em;
+
+    &::-webkit-scrollbar-track {
+      background-color: #eaeaea;
+    }
+
+    &::-webkit-scrollbar {
+      width: 6px;
+      background-color: #f5f5f5;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #3298dc;
+      border: none;
+    }
+  }
+
   &-content {
     padding-bottom: 4em;
   }
