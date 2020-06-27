@@ -9,15 +9,17 @@ const fetch_data = async () => {
    try {
       const response = await axios.get(url);
 
+
       const products = response.data.feed.entry.map(el => {
+         // console.log(el);
          let product = {
-            "publish": (el.gsx$item.$t != 'Vendido' && el.gsx$item.$t != 'Reservado'),
-            "stage": el.gsx$priority.$t,
+            "publish": (el.gsx$status.$t == 'Publicado'),
+            "stage": parseInt(el.gsx$priority.$t),
             "categories": el.gsx$category.$t.split('|'),
             "title": el.gsx$item.$t,
             "description": el.gsx$description.$t,
             "price": parseInt(el.gsx$price.$t.replace(/[\$\.,]/g, "")) / 100,
-            "images": el.gsx$pics.$t.split("|")
+            "images": (el.gsx$pics.$t != '') ? el.gsx$pics.$t.split("|").map(el => `../images/catalogo/${el}.jpg`) : ['../images/placeholder.jpg']
          }
 
          return product;
