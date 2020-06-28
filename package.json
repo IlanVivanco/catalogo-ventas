@@ -36,8 +36,9 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "node ./scripts/fetch-data.js && gatsby build",
-    "develop": "gatsby develop",
+    "fetch": "node ./scripts/fetch-data.js",
+    "build": "npm run fetch && gatsby build",
+    "develop": "npm run fetch && gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve"
