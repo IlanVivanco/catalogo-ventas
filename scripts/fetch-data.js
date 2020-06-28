@@ -18,7 +18,7 @@ const fetch_data = async () => {
             "categories": el.gsx$category.$t.split('|'),
             "title": el.gsx$item.$t,
             "description": el.gsx$description.$t,
-            "price": parseInt(el.gsx$price.$t.replace(/[\$\.,]/g, "")) / 100,
+            "price": (el.gsx$price.$t != '') ? parseInt(el.gsx$price.$t.replace(/[\$\.,]/g, "")) / 100 : null,
             "images": (el.gsx$pics.$t != '') ? el.gsx$pics.$t.split("|").map(el => `../images/catalogo/${el}.jpg`) : ['../images/placeholder.jpg']
          }
 
