@@ -186,7 +186,7 @@ class IndexPage extends React.Component {
                                 ))}
                               </div>
                               <Title isSize={4}>{title}</Title>
-                              <Subtitle isSize={6}>{price ? `$${price}`: 'Ofertar'}</Subtitle>
+                              <Subtitle isSize={6}>{price ? `$${price.toLocaleString('en').replace(/,/g,'.')}`: 'Ofertar'}</Subtitle>
                             </MediaContent>
                           </Media>
                           <Content>
