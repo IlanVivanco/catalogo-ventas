@@ -24,6 +24,8 @@ const fetch_data = async () => {
 
       let catalog = { catalog: products };
       let data = JSON.stringify(catalog, null, 2);
+
+      fs.mkdirSync('src/content', { recursive: true });
       fs.writeFileSync('src/content/catalog.json', data);
    } catch (error) {
       console.error(error)
