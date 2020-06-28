@@ -191,14 +191,7 @@ class IndexPage extends React.Component {
                           </Media>
                           <Content>
                             <p>
-                              {description.split('\n').map(function(item, key) {
-                                return (
-                                  <span key={key}>
-                                    {item}
-                                    <br/>
-                                  </span>
-                                )
-                              })}
+                              {description.split('\n').map((item, key) => (<span key={key}>{item}<br/></span>))}
                             </p>
                             <div className="actions">
                               <Button href={`${page.whatsapp}?text=Hola, estaba viendo el catálogo online y me gustó este producto: ${title}`} isColor='info' isLink target="_blank">Lo quiero</Button>

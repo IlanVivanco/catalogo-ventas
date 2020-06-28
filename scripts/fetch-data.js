@@ -2,16 +2,13 @@ const axios = require('axios');
 const fs = require('fs');
 
 const fetch_data = async () => {
-
    const spreadsheetID = "1skhDHfKqHerTuwyKsDjkP2f3cZ5KbIuoTMObc1T3udA";
    const url = `https://spreadsheets.google.com/feeds/list/${spreadsheetID}/od6/public/values?alt=json`;
 
    try {
       const response = await axios.get(url);
 
-
       const products = response.data.feed.entry.map(el => {
-         // console.log(el);
          let product = {
             "publish": (el.gsx$status.$t == 'Publicado'),
             "stage": parseInt(el.gsx$priority.$t),
@@ -28,7 +25,6 @@ const fetch_data = async () => {
       let catalog = { catalog: products };
       let data = JSON.stringify(catalog, null, 2);
       fs.writeFileSync('src/content/catalog.json', data);
-
    } catch (error) {
       console.error(error)
    }
