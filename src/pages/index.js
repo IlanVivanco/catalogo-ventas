@@ -85,7 +85,7 @@ class IndexPage extends React.Component {
   }
 
   sortProducts(products) {
-    return products.sort( (a, b) => {
+    return products.sort((a, b) => {
       return a.title.localeCompare(b.title);
     });
   }
@@ -155,9 +155,9 @@ class IndexPage extends React.Component {
                 <Columns>
                   <Column isSize="full" className="has-text-centered">
                     {this.state.categories.map((el, index) => (
-                      <Button isSize="small" isColor="info" className="filter-item" onClick={(e) => this.filterList(el)} key={index}>{el}{ el !== 'Todo' ? ` (${this.products.filter( prod => {
+                      <Button isSize="small" isColor="info" className="filter-item" onClick={(e) => this.filterList(el)} key={index}>{el}{el !== 'Todo' ? ` (${this.products.filter(prod => {
                         return prod.categories.includes(el)
-                      } ).length})` : ` (${this.products.length})` }</Button>
+                      }).length})` : ` (${this.products.length})`}</Button>
                     ))}
                   </Column>
                   {this.state.filteredProducts.map(({ title, description, price, images, categories, stage }, index) => (
@@ -188,12 +188,12 @@ class IndexPage extends React.Component {
                                 ))}
                               </div>
                               <Title isSize={4}>{title}</Title>
-                              <Subtitle isSize={6}>{price ? `$${price.toLocaleString('en').replace(/,/g,'.')}`: 'Ofertar'}</Subtitle>
+                              <Subtitle isSize={6}>{price ? `$${price.toLocaleString('en').replace(/,/g, '.')}` : 'Ofertar'}</Subtitle>
                             </MediaContent>
                           </Media>
                           <Content>
                             <p>
-                              {description.split('\n').map((item, key) => (<span key={key}>{item}<br/></span>))}
+                              {description.split('\n').map((item, key) => (<span key={key}>{item}<br /></span>))}
                             </p>
                             <div className="actions">
                               <Button href={`${page.whatsapp}?text=Hola, estaba viendo el catálogo online y me gustó este producto: ${title}`} isColor='info' isLink target="_blank">Lo quiero</Button>
