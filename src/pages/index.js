@@ -155,7 +155,9 @@ class IndexPage extends React.Component {
                 <Columns>
                   <Column isSize="full" className="has-text-centered">
                     {this.state.categories.map((el, index) => (
-                      <Button isSize="small" isColor="info" className="filter-item" onClick={(e) => this.filterList(el)} key={index}>{el}</Button>
+                      <Button isSize="small" isColor="info" className="filter-item" onClick={(e) => this.filterList(el)} key={index}>{el}{ el !== 'Todo' ? ` (${this.products.filter( prod => {
+                        return prod.categories.includes(el)
+                      } ).length})` : ` (${this.products.length})` }</Button>
                     ))}
                   </Column>
                   {this.state.filteredProducts.map(({ title, description, price, images, categories, stage }, index) => (
