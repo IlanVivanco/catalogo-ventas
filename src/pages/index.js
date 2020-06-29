@@ -109,7 +109,7 @@ class IndexPage extends React.Component {
   }
 
   carousel() {
-    new Swiper('.carousel .swiper-container', {
+    let swiper = new Swiper('.carousel .swiper-container', {
       loop: true,
       pagination: {
         el: '.swiper-pagination',

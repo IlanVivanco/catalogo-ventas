@@ -145,9 +145,18 @@ $footer-padding: 1em;
     }
   }
 
+  .swiper-container {
+    pointer-events: none;
+  }
+
   .carousel {
     overflow: hidden;
     width: 100%;
+
+    .swiper-container {
+      pointer-events: auto;
+    }
+
     .swiper-button-prev,
     .swiper-button-next,
     .swiper-pagination {
