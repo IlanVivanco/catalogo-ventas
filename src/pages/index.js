@@ -37,6 +37,7 @@ class IndexPage extends React.Component {
     let products = props.data.allContentJson.nodes[0].catalog;
     products = this.publishedProducts(products);
     products = this.sortProducts(products);
+    products = this.featuredProducts(products);
 
     this.products = products;
     this.categories = this.setCategories();
@@ -87,6 +88,12 @@ class IndexPage extends React.Component {
   sortProducts(products) {
     return products.sort((a, b) => {
       return a.title.localeCompare(b.title);
+    });
+  }
+
+  featuredProducts(products) {
+    return products.sort((a, b) => {
+      return a.title === 'Toyota Corolla' ? -1 : 1;
     });
   }
 
