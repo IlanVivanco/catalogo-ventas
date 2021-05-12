@@ -26,7 +26,7 @@
     "react": "16.13.0",
     "react-dom": "16.13.0",
     "react-helmet": "5.2.1",
-    "swiper": "^5.4.5"
+    "swiper": "^6.5.1"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "5.13.0",
